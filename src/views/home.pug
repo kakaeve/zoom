@@ -10,11 +10,18 @@ html(lang="ko")
     header 
         h1 Woom
     main
-        form#nickname
-            input(type="text", placehorler="input your nickname", require)
-            button save
-        ul
-        form#message
-            input(type="text", placehorler="write a massage", require)
-            button Send
+        div#welcome
+            form#enter
+                input(id="nick" placeholder="nickname",require,type="text")
+                input(id="room_name" placeholder="room name",require,type="text")
+                input(type="submit")
+            h4 Open Rooms
+            ul
+        div#room
+            h3
+            ul
+            form#msg
+                input(placeholder="message",require,type="text")
+                button Send
+    script(src="/socket.io/socket.io.js") 
     script(src="/public/js/app.js") 
