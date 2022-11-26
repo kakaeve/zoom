@@ -10,5 +10,11 @@ html(lang="ko")
     header 
         h1 Woom
     main
-        h3 Welcome to Woom
+        form#nickname
+            input(type="text", placehorler="input your nickname", require)
+            button save
+        ul
+        form#message
+            input(type="text", placehorler="write a massage", require)
+            button Send
     script(src="/public/js/app.js") 
