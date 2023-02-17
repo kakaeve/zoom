@@ -10,6 +10,23 @@ html(lang="ko")
     header 
         h1 Woom
     main
+<<<<<<< HEAD
         h3 Welcome to Woom
         h3 ??
+=======
+        div#welcome
+            form#enter
+                input(id="nick" placeholder="nickname",require,type="text")
+                input(id="room_name" placeholder="room name",require,type="text")
+                input(type="submit")
+            h4 Open Rooms
+            ul
+        div#room
+            h3
+            ul
+            form#msg
+                input(placeholder="message",require,type="text")
+                button Send
+    script(src="/socket.io/socket.io.js") 
+>>>>>>> 9242a5b00b6e6bfd0abb814f29b987b448409f13
     script(src="/public/js/app.js") 
